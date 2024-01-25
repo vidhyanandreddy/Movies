@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+    <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="injected-svg" data-src="https://hugeicons.storage.googleapis.com/icons/cancel-01-stroke-rounded.svg?type=svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#8afd04">
+<path d="M19 5L5 19M5 5L19 19" stroke="gold" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg></a></li>
+        <li><a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="injected-svg" data-src="https://hugeicons.storage.googleapis.com/icons/home-06-stroke-rounded.svg?type=svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#ffffff">
+<path d="M9.06165 4.82633L3.23911 9.92134C2.7398 10.3583 3.07458 11.1343 3.76238 11.1343C4.18259 11.1343 4.52324 11.4489 4.52324 11.8371V15.0806C4.52324 17.871 4.52324 19.2662 5.46176 20.1331C6.40029 21 7.91082 21 10.9319 21H13.0681C16.0892 21 17.5997 21 18.5382 20.1331C19.4768 19.2662 19.4768 17.871 19.4768 15.0806V11.8371C19.4768 11.4489 19.8174 11.1343 20.2376 11.1343C20.9254 11.1343 21.2602 10.3583 20.7609 9.92134L14.9383 4.82633C13.5469 3.60878 12.8512 3 12 3C11.1488 3 10.4531 3.60878 9.06165 4.82633Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M12 16H12.009" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg> Home</a></li>
+<li><a href="index-1.html" class="active">Hindi Movies</a></li>
+<li><a href="index-2.html">Tamil Movies</a></li>
+<li><a href="index-4.html">Premium</a></li>
+<li><a href="index-3.html">About Us</a></li>
+    </ul>
+    <ul>
+        <li><a href="#Vidhyanand"><b class="title">Hindi Movies</b><img src="live.svg" alt="" style="margin-left: 5px;"></a></li>
+        <li class="hideOnMobile"><a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="injected-svg" data-src="https://hugeicons.storage.googleapis.com/icons/home-06-stroke-rounded.svg?type=svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#ffffff">
+<path d="M9.06165 4.82633L3.23911 9.92134C2.7398 10.3583 3.07458 11.1343 3.76238 11.1343C4.18259 11.1343 4.52324 11.4489 4.52324 11.8371V15.0806C4.52324 17.871 4.52324 19.2662 5.46176 20.1331C6.40029 21 7.91082 21 10.9319 21H13.0681C16.0892 21 17.5997 21 18.5382 20.1331C19.4768 19.2662 19.4768 17.871 19.4768 15.0806V11.8371C19.4768 11.4489 19.8174 11.1343 20.2376 11.1343C20.9254 11.1343 21.2602 10.3583 20.7609 9.92134L14.9383 4.82633C13.5469 3.60878 12.8512 3 12 3C11.1488 3 10.4531 3.60878 9.06165 4.82633Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M12 16H12.009" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>  Home</a></li>
+<li class="hideOnMobile"><a href="index-1.html" class="active">Hindi Movies</a></li>
+<li class="hideOnMobile"><a href="index-2.html">Tamil Movies</a></li>
+<li class="hideOnMobile"><a href="index-4.html">Premium</a></li>
+<li class="hideOnMobile"><a href="index-3.html">About Us</a></li>
+        <li class="menubtn" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="injected-svg" data-src="https://hugeicons.storage.googleapis.com/icons/menu-01-stroke-rounded.svg?type=svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#8bfe03">
+<path d="M4 5L20 5"   stroke="gold" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M4 12L20 12" stroke="gold" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M4 19L20 19" stroke="gold" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg></a></li>
+    </ul>
+   </nav>
+   <main>
+    <section class="first">
+        <div class="boxx"></div>
+        <div class="hero">
+            <span class="anim">Enjoy big movies, hit series and more from ₹ 149.</span>
+            <span class="anim">Join today. Cancel anytime.</span>
+            <span class="anim">Ready to watch? Enter your email to create or restart your membership.</span>
+            <div class="hero-buttons anim">
+                <input type="text" placeholder="Email Address">
+                <button class="btn btn-red">Get Started &gt;</button>
+            </div>
+        </div>
+        <div class="separation"></div>
+    </section>
+    <section class="second">
+   <div class="grid">
+    <div class="card anim A">
+        <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/main-atal-hoon-et00348408-1705388347.jpg" alt="">
+        <h4>Main Atal</h4>
+        <h5>2024</h5>
+    </div>
+
+    <div class="card anim B">
+        <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/shastry-viruddh-shastry-et00374732-1698739465.jpg" alt="">
+        <h4>Shastry Viruddh</h4>
+        <h5>2023</h5>
+    </div>
+
+    <div class="card anim C">
+        <img src="https://filmables.net/wp-content/uploads/2023/12/Kho-Gaye-Hum-Kahan.jpg" alt="">
+        <h4>Kho Gaye</h4>
+        <h5>2023</h5>
+    </div>
+
+    <div class="card anim D">
+        <img src="https://m.media-amazon.com/images/M/MV5BMjA5ZjY4ZmUtYjVkMy00NDA1LThkOWEtYjY1NDFiM2MyNTAzXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_FMjpg_UX1000_.jpg" alt="">
+        <h4>Kabuliwala</h4>
+        <h5>2023</h5>
+    </div>
+    <div class="card anim E">
+        <img src="https://m.media-amazon.com/images/M/MV5BNzYzMTcwYWItOTU4OS00NTYwLTg1MmYtNGRjYTEwNDY0OGI5XkEyXkFqcGdeQXVyMTUyNjIwMDEw._V1_.jpg" alt="">
+        <h4>Farrey</h4>
+        <h5>2023</h5>
+    </div>
+    <div class="card anim F">
+        <img src="https://m.media-amazon.com/images/M/MV5BYTY0ZDRiZjEtMWQ2NC00MTdlLWFmM2YtMzg2NjYxMWU4YzhjXkEyXkFqcGdeQXVyNzQ0MzkyMjc@._V1_.jpg" alt="">
+        <h4>Dry Day</h4>
+        <h5>2023</h5>
+    </div>
+    <div class="card anim G">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.V2T97nh7TGOV72vP_yAsMQHaLH&pid=Api&P=0&h=180" alt="">
+        <h4>Aquaman 2</h4>
+        <h5>2023</h5>
+    </div>
+    <div class="card anim H">
+        <img src="https://image.tmdb.org/t/p/original/2C10161Z5H9XC0cU6tkVUq8sRk4.jpg" alt="">
+        <h4>Priscilla</h4>
+        <h5>2023</h5>
+    </div>
+    <div class="card anim I">
+        <img src="https://tse3.mm.bing.net/th?id=OIP.tqxHUPoZlW36yBqm7VrtWAHaLH&pid=Api&P=0&h=180" alt="">
+        <h4>Silent Night</h4>
+        <h5>2023</h5>
+    </div>
+    <div class="card anim J">
+        <img src="https://assets.gadgets360cdn.com/pricee/assets/product/202205/the_archies_poster_1653042829.jpeg" alt="">
+        <h4>The Archies</h4>
+        <h5>2023</h5>
+    </div>
+   </div>
+   </section>
+   </main>
+   <footer>
+    <div class="foot">
+    <p>Created by Vidhyanand &copy; 2024</p>
+    </div>
+   </footer>
+   <script src="script.js"></script>
+</body>
+</html>
