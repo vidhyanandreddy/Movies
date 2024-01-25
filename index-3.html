@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'segoe UI' sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background-color: black; */
+}
+
+nav {
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(253, 249, 249, 0.578);
+    background-color:black;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: 700;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color:white;
+}
+nav a:hover {
+    background-color: #252525;
+    font-size: 1.2rem;
+}
+nav li:first-child {
+    margin-right: auto;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 55vh;
+    width: 250px;
+    z-index: 999;
+    color: white;
+    background-color:black;
+    /* backdrop-filter: blur(10px); */
+    box-shadow: -10px 0 10px rgba(138, 136, 136, 0.306);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+.menubtn {
+    display: none;
+}
+
+@media(max-width:800px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .menubtn {
+        display: block;
+    }
+    .second .grid{
+        grid-template-columns: 1fr 1fr;
+        margin: auto;
+    }
+}
+
+@media(max-width:500px) {
+    .sidebar {
+        width: 50%;
+    }
+}
+main{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px 30px;
+    font-size: 17px;
+    padding: 8px;
+    background-color: white;
+}
+.sub{
+    padding-left: 25px;
+    font-size: 1rem;
+    
+}
+.container1{
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+}
+input[type="submit"] {
+    background-color: #4ca319;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    
+}
+input[type="submit"]:hover {
+    background-color: #08ca32;
+}
+.container h2{
+    text-align: center;
+    /* margin-bottom: 20px; */
+    background:rgb(112, 177, 176);
+    border: 1px solid lightgray;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+.active{
+    color: gold;
+}
+.title{
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: emoji;
+    color: rgb(3, 254, 3);
+}
+footer{
+    text-align: center;
+}
+.foot{
+    /* border: 2px solid; */
+    height: 40px;
+    padding: 7px;
+}
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.7s linear forwards;
+}
+@keyframes moveup {
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+    </style>
+</head>
+<body>
+     <nav>
+    <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="injected-svg" data-src="https://hugeicons.storage.googleapis.com/icons/cancel-01-stroke-rounded.svg?type=svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#8afd04">
+<path d="M19 5L5 19M5 5L19 19" stroke="#8afd04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg></a></li>
+        <li><a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="injected-svg" data-src="https://hugeicons.storage.googleapis.com/icons/home-06-stroke-rounded.svg?type=svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#ffffff">
+<path d="M9.06165 4.82633L3.23911 9.92134C2.7398 10.3583 3.07458 11.1343 3.76238 11.1343C4.18259 11.1343 4.52324 11.4489 4.52324 11.8371V15.0806C4.52324 17.871 4.52324 19.2662 5.46176 20.1331C6.40029 21 7.91082 21 10.9319 21H13.0681C16.0892 21 17.5997 21 18.5382 20.1331C19.4768 19.2662 19.4768 17.871 19.4768 15.0806V11.8371C19.4768 11.4489 19.8174 11.1343 20.2376 11.1343C20.9254 11.1343 21.2602 10.3583 20.7609 9.92134L14.9383 4.82633C13.5469 3.60878 12.8512 3 12 3C11.1488 3 10.4531 3.60878 9.06165 4.82633Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M12 16H12.009" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg> Home</a></li>
+<li><a href="index-1.html">Hindi Movies</a></li>
+<li><a href="index-2.html">Tamil Movies</a></li>
+<li><a href="index-4.html">Premium</a></li>
+<li><a href="index-3.html" class="active">About Us</a></li>
+    </ul>
+    <ul>
+        <li><a href="#Vidhyanand"><b class="title">Contact Us</b></a></li>
+        <li class="hideOnMobile"><a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="injected-svg" data-src="https://hugeicons.storage.googleapis.com/icons/home-06-stroke-rounded.svg?type=svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#ffffff">
+<path d="M9.06165 4.82633L3.23911 9.92134C2.7398 10.3583 3.07458 11.1343 3.76238 11.1343C4.18259 11.1343 4.52324 11.4489 4.52324 11.8371V15.0806C4.52324 17.871 4.52324 19.2662 5.46176 20.1331C6.40029 21 7.91082 21 10.9319 21H13.0681C16.0892 21 17.5997 21 18.5382 20.1331C19.4768 19.2662 19.4768 17.871 19.4768 15.0806V11.8371C19.4768 11.4489 19.8174 11.1343 20.2376 11.1343C20.9254 11.1343 21.2602 10.3583 20.7609 9.92134L14.9383 4.82633C13.5469 3.60878 12.8512 3 12 3C11.1488 3 10.4531 3.60878 9.06165 4.82633Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M12 16H12.009" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg> Home</a></li>
+<li class="hideOnMobile"><a href="index-1.html">Hindi Movies</a></li>
+<li class="hideOnMobile"><a href="index-2.html">Tamil Movies</a></li>
+<li class="hideOnMobile"><a href="index-4.html">Premium</a></li>
+<li class="hideOnMobile"><a href="index-3.html" class="active">About Us</a></li>
+        <li class="menubtn" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="injected-svg" data-src="https://hugeicons.storage.googleapis.com/icons/menu-01-stroke-rounded.svg?type=svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#8bfe03">
+<path d="M4 5L20 5" stroke="#8bfe03" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M4 12L20 12" stroke="#8bfe03" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M4 19L20 19" stroke="#8bfe03" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg></a></li>
+    </ul>
+   </nav>
+   <main class="anim">
+    <div class="container">
+        <form action="">
+             <h2>Contact Us</h2>
+            </div>
+            <div class="container1">
+            <p>Your Name: <input type="text" name="name" placeholder="Your Full Name" required> </p>
+            <p>Your Email: <input type="email" name="email" placeholder="Valid Email Address" required> </p>
+            <p>Message: <textarea name="massage" id="massage" cols="100" rows="8"></textarea> </p>
+            <!-- <p>Subject: <input type="text" name="subject" placeholder="Job Inquiry" required> </p> -->
+            <input type="submit" value="Send">
+        </form>
+        </div>
+        </main>
+        <footer>
+    <div class="foot">
+    <p>Created by Vidhyanand &copy; 2024</p>
+    </div>
+   </footer>
+        <script src="script.js"></script>
+</body>
+</html>
