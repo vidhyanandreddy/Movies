@@ -94,7 +94,7 @@ nav li:first-child {
 gap:5px;
     }
     .second .card{
-        width: 120px;
+        width: 130px;
     }
 }
 @media (max-width:500px) {
@@ -105,7 +105,7 @@ gap:0px;
         }
     
         .second .card {
-            width: 100px;
+            width: 110px;
         }
 .second{
 margin-right:20px;
@@ -118,7 +118,7 @@ margin-right:20px;
 }
 @media(max-width:400px) {
     .second .card {
-        width: 100px;
+        width: 110px;
     }
 .second .grid {
         gap:0px;
