@@ -91,6 +91,7 @@ nav li:first-child {
     .second .grid{
         grid-template-columns: 1fr 1fr 1fr;
         margin: auto;
+gap:8px;
     }
     .second .card{
         width: 120px;
@@ -100,6 +101,7 @@ nav li:first-child {
     .second .grid {
             grid-template-columns: 1fr 1fr 1fr;
             margin: auto;
+gap:5px;
         }
     
         .second .card {
