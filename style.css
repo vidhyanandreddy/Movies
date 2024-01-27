@@ -91,7 +91,7 @@ nav li:first-child {
     .second .grid{
         grid-template-columns: 1fr 1fr 1fr;
         margin: auto;
-gap:8px;
+gap:5px;
     }
     .second .card{
         width: 120px;
@@ -101,11 +101,11 @@ gap:8px;
     .second .grid {
             grid-template-columns: 1fr 1fr 1fr;
             margin: auto;
-gap:5px;
+gap:0px;
         }
     
         .second .card {
-            width: 100px;
+            width: 110px;
         }
 }
 @media(max-width:500px) {
@@ -115,7 +115,7 @@ gap:5px;
 }
 @media(max-width:400px) {
     .second .card {
-        width: 100px;
+        width: 110px;
     }
 .second .grid {
         gap:0px;
@@ -257,7 +257,7 @@ gap:5px;
 }
 .card{
     width: 300px;
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
     cursor: pointer;
 }
