@@ -105,7 +105,7 @@ gap:0px;
         }
     
         .second .card {
-            width: 110px;
+            width: 100px;
         }
 }
 @media(max-width:500px) {
@@ -115,7 +115,7 @@ gap:0px;
 }
 @media(max-width:400px) {
     .second .card {
-        width: 110px;
+        width: 100px;
     }
 .second .grid {
         gap:0px;
