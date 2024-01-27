@@ -127,7 +127,7 @@ margin-right:20px;
 margin-right:20px;
 }
 }
-@media(max-width:366px) {
+@media(max-width:340px) {
     .second .card {
         width: 90px;
 padding:3px;
