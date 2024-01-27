@@ -107,6 +107,9 @@ gap:0px;
         .second .card {
             width: 100px;
         }
+.second{
+margin-right:20px;
+}
 }
 @media(max-width:500px) {
     .sidebar {
@@ -120,6 +123,9 @@ gap:0px;
 .second .grid {
         gap:0px;
     }
+.second{
+margin-right:20px;
+}
 }
 .first{
     display: flex;
