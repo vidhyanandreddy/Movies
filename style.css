@@ -111,7 +111,11 @@ nav li:first-child {
         width: 50%;
     }
 }
-
+@media(max-width:400px) {
+    .second .card {
+        width: 80px;
+    }
+}
 .first{
     display: flex;
     flex-direction: column;
